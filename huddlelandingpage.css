@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');/*font-family: 'Poppins', sans-serif;*/
+
+body{
+    background-image: url("images/bg-desktop.svg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color:hsl(257, 40%, 49%);
+    padding:30px 30px;
+    font-size:16px;
+}
+
+.illustration{
+    margin-right:40px;
+    margin-top:40px;
+}
+
+.content{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+}
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    margin-left:40px;
+    margin-top:-100px;
+    width:400px;
+}
+
+.text h1{
+    font-weight:400;
+}
+
+.text p{
+    font-size:.8em;
+    line-height:1.5em;
+}
+
+button{
+    width:150px;
+    height:40px;
+    border:none;
+    border-radius:50px;
+    color:hsl(257, 40%, 49%);
+    background-color:white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow:2px 2px 2px hsl(257, 40%, 27%);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:hsl(290, 92%, 61%);
+    color:white;
+}
+
+.social{
+    padding:0;
+    display:grid;
+    grid-template-columns: 35px 35px 35px;
+    grid-template-rows:35px;
+    grid-gap:10px;
+    float:right;
+    margin-left:30px;
+    margin-bottom:0;
+}
+
+.social li{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style-type:none;
+    cursor: pointer;
+    font-size:1.5em;
+    color:hsl(0, 0%, 100%);
+    border:1px solid hsl(0, 0%, 100%);
+    border-radius:50%;
+}
+
+.social li:hover{
+    background-color:hsl(290, 92%, 61%);
+    color:white;
+    border:1px solid hsl(290, 92%, 61%);
+}
+
+@media screen and (max-width: 780px) {
+
+    body{
+        padding:20px 20px;
+        background-image: url("images/bg-mobile.svg");
+        background-repeat:no-repeat;
+        background-size:100%;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .content{
+        padding:0;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .logo{
+        margin-bottom:-70px;
+    }
+
+    .illustration{
+        margin:0 0;
+        position:relative;
+        transform:scale(.4);
+        margin-bottom:-125px;
+    }
+
+    .text{
+        margin:0 0;
+        position:relative;
+        width:auto;
+        text-align:center;
+    }
+
+    .text h1{
+        font-size:1.8em;
+    }
+
+    .text p{
+        font-size:.98em;
+    }
+
+    button{
+        width:75%;
+    }
+
+    .social{
+        transform:scale(.7);
+        margin-left:75px;
+        margin-top:30px;
+   }
+    }
